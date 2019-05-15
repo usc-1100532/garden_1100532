@@ -1,0 +1,53 @@
+package garden_planner.model;
+
+import org.junit.jupiter.api.Test;
+
+import java.awt.*;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class RectBedTest {  
+
+    @Test
+    void setLeft() {
+        assertEquals(0.0,0.0);
+    }
+
+    @Test
+    void setTop() {
+        assertEquals(0.0,0.0);
+    }
+
+    @Test
+    void setWidth() {
+        assertEquals(1.0, 1.0);
+    }
+
+    @Test
+    void setHeight() {
+        assertEquals(1.0, 1.0);
+    }
+
+    @Test
+    void getArea() {
+        Rectangle r = new Rectangle(5,4);
+        assertEquals(20,20);
+
+    }
+
+    @Test
+    void getPerimeter() {
+        Rectangle r = new Rectangle(5,4);
+        assertEquals(18, 18);
+
+    }
+
+    @Test
+    void toString1() {
+        RectBed rect = new RectBed("Rectangle");
+        assertEquals("Rectangle 0.00 0.00 1.00 1.00", rect.toString());
+
+
+    }
+}
+
